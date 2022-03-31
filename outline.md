@@ -37,7 +37,7 @@
 
 * Example - How to create your own
 
-* Problem to Solve
+* Problem to Solve - create your own and remove and insert
 
 ## IV. Tree
 
@@ -55,4 +55,4 @@
 
 * Example - Searching and inserting into a tree
 
-* Problem to Solve
+* Problem to Solve 
