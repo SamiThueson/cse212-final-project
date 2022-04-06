@@ -4,9 +4,9 @@ Trees are very similar and almost identical to linked lists. They are made up of
 
 At the basic level a tree consists of the root, parent, and child.
 
-The topmost node of a tree or the node which does not have any parent node is called the **root** node. Connected to the root node are **parent** nodes, but what truly makes a parent node is the fact the it has **child** nodes.
+The topmost node of a tree or the node which does not have any parent node is called the ***root*** node. Connected to the root node are ***parent*** nodes, but what truly makes a parent node is the fact the it has ***child*** nodes.
 
-Other worthy mentions are leaf nodes and subtrees. The nodes which do not have any child nodes are called **leaf** nodes. And a **subtree** is any node of the tree along with its descendant.
+Other worthy mentions are leaf nodes and subtrees. The nodes which do not have any child nodes are called ***leaf*** nodes. And a ***subtree*** is any node of the tree along with its descendant.
 
 ## General Tree
 

@@ -2,13 +2,13 @@ The queue is a linear data structure used to represent a linear list. Unlike a s
 
 ## What is a Queue
 
-A queue is a linear list of elements in which deletion of an element can take place only at one end called the **front** and insertion can take place on the other end which is termed as the **rear**.
+A queue is a linear list of elements in which deletion of an element can take place only at one end called the ***front*** and insertion can take place on the other end which is termed as the ***rear***.
 
 In a queue, the first element that is inserted will also be the first one removed. That is why it's called First In First Out. 
 
 An example of how a queue works would be a line of people waiting to order food. The first person in line orders their food and exits the line. Someone who just got to the resturant and wants to order food enters the line at the rear. This way of organization keeps everyone in there right place, so that whoever got in line first gets to order first. 
 
-There are a couple more technical terms we use for queues. **Enqueue** adds an item to the back of the queue. While **dequeue** removes and item from the front of the queue. 
+There are a couple more technical terms we use for queues. ***Enqueue*** adds an item to the back of the queue. While ***dequeue*** removes and item from the front of the queue. 
 
 ## Big O of Queues
 

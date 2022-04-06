@@ -3,11 +3,11 @@ In simple words, a linked list consists of nodes where each node contains a data
 
 ## What Makes Up a Linked List
 
-Linked lists are made up of **nodes** and **pointers**. The first node in a linked list is called the **head** and the last node is called a **tail**. If there is only one node in a linked list then that node is reffered to as both the head and tail.
+Linked lists are made up of ***nodes*** and ***pointers***. The first node in a linked list is called the ***head*** and the last node is called a ***tail***. If there is only one node in a linked list then that node is reffered to as both the head and tail.
 
 The node in a linked list is the equavilent to an element in an array. It holds a value. 
 
-A pointer references to a node. A **next** pointer points to the next node in the list, and a **previous** pointer points to the previous node. 
+A pointer references to a node. A ***next*** pointer points to the next node in the list, and a ***previous*** pointer points to the previous node. 
 
 ### Singly Linked List
 
