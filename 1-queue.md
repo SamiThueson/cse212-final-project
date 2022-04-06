@@ -8,8 +8,6 @@ In a queue, the first element that is inserted will also be the first one remove
 
 An example of how a queue works would be a line of people waiting to order food. The first person in line orders their food and exits the line. Someone who just got to the resturant and wants to order food enters the line at the rear. This way of organization keeps everyone in there right place, so that whoever got in line first gets to order first. 
 
-**ADD PICTURE**
-
 There are a couple more technical terms we use for queues. **Enqueue** adds an item to the back of the queue. While **dequeue** removes and item from the front of the queue. 
 
 ## Big O of Queues
@@ -99,7 +97,7 @@ An approach to solve this problem could be to use another data structure to stor
 
 But whatever approach you decide to use, your output should look something like this.
 
-```python
+```
 How many of the first n elements of the queue would you like to reverse? Please provide a number:
 > 5
 
