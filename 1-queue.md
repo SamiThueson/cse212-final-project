@@ -35,7 +35,7 @@ len(queue) == 0 | Checks if the queue is empty | Both
 
 ## Example - Using a List and Deque
 
-Using a list is very straight forward and easy to understand.
+Using a list is very straight forward and easy to understand. You implement the queue with a list and use append and pop just like you would with any other list.
 
 ```python
 # Initialize a queue.
@@ -60,7 +60,7 @@ print("\n The rest of the queue.")
 print(queue)
 ```
 
-The deque class is also about as easy to use as a list. 
+The deque class is also just as easy to use as a list. You intialize the queue with the deque method and use it like you would a list, but with append and popleft. 
 
 ```python
 from collections import deque
@@ -86,10 +86,27 @@ print(queue.popleft())
 print("\n The rest of the queue.")
 print(queue)
 ```
-**NOT FINISHED**
 
 ## Problem to Solve
 
-**NOT FINISHED**
+For this problem you are going to reverse the order of a certain amount of elements in a queue.
+
+The user will provide a number and the program will then reverse the n amount of elements order in the queue, leaving the other elements relatively untouched. 
+
+For example the user could give the number 5, the order of the first 5 elements of the queue would then need to be reversed, but the rest of the queue is left untouched. 
+
+An approach to solve this problem could be to use another data structure to store the first n amount of elements in and then re-insert into the original queue. 
+
+But whatever approach you decide to use, your output should look something like this.
+
+```python
+How many of the first n elements of the queue would you like to reverse? Please provide a number:
+> 5
+
+5 elements were reversed in the queue:
+50 40 30 20 10 60 70 80 90 100
+```
+
+You can check your code with the solution here: [Solution](queue-solution.py)
 
 [Back to Welcome Page](0-welcome.md)

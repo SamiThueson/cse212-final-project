@@ -63,25 +63,97 @@ class Node:
         self.previous = None
 ```
 
-**NOT FINISHED**
+From here you can create different functions within the classes that can insert, remove, traverse the linked list, and many more. 
+
+To insert into the head of a linked list you just need to identify if the list is empty and insert your new node at the head. It's pretty easy to insert at the head of a linked list.
+
+```python
+def add_head(self, node):
+    # If the list is empty, then assign the node as both the head and tail.
+    if self.head is None:
+        self.head = node
+        self.tail = node
+    # Otherwise insert the new node at the head. 
+    else:
+        node.next = self.head
+        self.head.prev = node
+        self.head = node
+```
+
+Traversing a linked list is just a fancier way of saying iterating a list. We can use __iter__ to add a behavior to the linked list that you would expect from a normal list. (Yielding stops at every node in the list.)
+
+```python
+def __iter__(self):
+    # Start at the head and go through each node in the list until you hit None.
+    node = self.head
+    while node is not None:
+        yield node
+        node = node.next
+```
+
+Removing the tail of a linked list is pretty straight forward. It's similar to inserting at the head of a linked list. You first check if the list has any items in it, and if it has more than one item then only the tail will be affected.
+
+```python
+def remove_tail(self):
+    # If there is one item in the list set it to be None.
+    if self.head == self.tail:
+        self.head = None
+        self.tail = None
+    # If there is more than one item in the list, only the tail will be affected.
+    elif self.tail is not None:
+        self.tail.prev.next = None
+        self.tail = self.tail.prev
+```
 
 ## Problem to Solve
 
 For this problem you are going to create a music player using a doubly linked list. 
 
-Start by creating a linked list without using the deque module. You will then add 10 of your favorite songs to the list. 
+Start by creating a linked list without using the deque module. You will then add 5 of your favorite songs to the list. 
 
-Next you will need to remove 1 song from the head, tail, and somewhere in the middle. 
+Next you will need to remove 1 song from the head and 1 from the tail. 
 
-Afterwards you will insert those songs back into the linked list where they were originally removed from.
+Afterwards you will insert two new songs back into the linked list at the head and tail.
 
 Your output should look something like this.
+
 ```python
 Please provide what song you would like to add: 
+> Dont Stop Me Now
 
+Please provide what song you would like to add: 
+> Lost In Japan
 
+Please provide what song you would like to add: 
+> Sunday Best
+
+Please provide what song you would like to add: 
+> idontwannabeyouanymore
+
+Please provide what song you would like to add: 
+> Ophelia
+
+Dont Stop Me Now
+Lost In Japan
+Sunday Best
+idontwannabeyouanymore
+Ophelia
+
+Remove the first and last song from the list:
+Lost In Japan, Sunday Best, idontwannabeyouanymore
+
+Insert a new song at the head:
+> Superlove
+
+Insert a new song at the tail:
+> One Man Band
+
+Superlove
+Lost In Japan
+Sunday Best
+idontwannabeyouanymore
+One Man Band
 ```
-
-**NOT FINISHED**
+You can check your code with the solution here: [Solution](linkedlist-solution.py)
 
 [Back to Welcome Page](0-welcome.md)
